@@ -14,7 +14,7 @@ Thanks for helping! Inzel is a small Rust project, so it is easy to get started.
 Windows 10/11, [Rust](https://rustup.rs) (stable, MSVC) and Visual Studio Build Tools ("Desktop development with C++").
 
 ```bat
-git clone https://github.com/<your-username>/Inzel.git
+git clone https://github.com/DebuggerMohon/Inzel.git
 cd Inzel
 cargo run            :: debug build, shows a console for logs
 cargo build --release
