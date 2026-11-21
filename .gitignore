@@ -1,0 +1,17 @@
+# Rust / Cargo build outputs & caches
+/target/
+**/*.rs.bk
+
+# Compiled binaries & installer artifacts (upload big installers to GitHub Releases instead)
+/installer/
+*.exe
+*.dll
+*.pdb
+
+# Environment & local secrets
+.env
+.env.*
+
+# Logs & local runtime/temp files
+*.log
+*.tmp

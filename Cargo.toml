@@ -1,0 +1,48 @@
+[package]
+name = "inzel"
+version = "1.0.0"
+edition = "2021"
+authors = ["Debugger Mohon"]
+description = "Push-to-talk voice typing and translator for Windows"
+license = "MIT"
+repository = "https://github.com/DebuggerMohon/Inzel"
+build = "build.rs"
+
+[[bin]]
+name = "Inzel"
+path = "src/main.rs"
+
+[dependencies]
+serde_json = "1"
+cpal = "0.15"
+ureq = "2"
+winreg = "0.52"
+
+[dependencies.windows]
+version = "=0.58.0"
+features = [
+    "Win32_Foundation",
+    "Win32_Security",
+    "Win32_Graphics_Gdi",
+    "Win32_Graphics_Dwm",
+    "Win32_UI_WindowsAndMessaging",
+    "Win32_UI_Input_KeyboardAndMouse",
+    "Win32_UI_Shell",
+    "Win32_UI_HiDpi",
+    "Win32_System_LibraryLoader",
+    "Win32_System_Threading",
+    "Win32_System_DataExchange",
+    "Win32_System_Memory",
+    "Win32_System_SystemInformation",
+]
+
+[build-dependencies]
+winresource = "0.1"
+
+# Everything below is about a tiny exe and tiny RAM use.
+[profile.release]
+opt-level = "z"
+lto = true
+codegen-units = 1
+panic = "abort"
+strip = true
