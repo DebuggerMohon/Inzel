@@ -1,8 +1,8 @@
 <div align="center">
 
-<img src="assets/logo.png" width="110" alt="Inzel logo">
+<img src="assets/inzel.ico" width="110" alt="Inzel logo">
 
-# Inzel
+# Inzel  
 
 **Push-to-talk voice typing and translator for Windows.**
 Hold a key, speak in any of 39 languages, and the text appears at your cursor, in any app.
