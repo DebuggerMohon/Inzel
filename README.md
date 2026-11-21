@@ -31,7 +31,7 @@ fraction of the memory (the working set is also trimmed whenever the window is h
 ## Download & install
 
 1. Open the [**Releases**](https://github.com/DebuggerMohon/Inzel/releases/latest) page.
-2. Download `Inzel-Setup-x.y.z.exe` and run it: **Next → Next → Install → Finish**.
+2. Download `Inzel-Setup-1.0.0.exe` and run it: **Next → Next → Install → Finish**.
 
 > **SmartScreen** may say "Windows protected your PC" because the installer is not code-signed yet.
 > Click **More info → Run anyway**, or build it yourself (below).
